@@ -1,22 +1,27 @@
 function adicionarReceita() {
     const descricao = document.getElementById("description").value;
-    const valor = parseFloat(document.getElementById("value").value);
+    let valor = document.getElementById("value").value;
+
+    // Substitui a vírgula por ponto e remove caracteres extras
+    valor = valor.replace(",", ".");
+    valor = parseFloat(valor);
+
+    if (isNaN(valor) || valor <= 0) {
+        alert("Por favor, insira um valor válido.");
+        return;
+    }
+
     const data = document.getElementById("date").value;
 
-    // Verifica se já existe um array de receitas no LocalStorage
     let receitas = JSON.parse(localStorage.getItem("receitas")) || [];
 
-    // Adiciona a nova receita ao array
     receitas.push({
         descricao: descricao,
         valor: valor,
         data: data
     });
 
-    // Atualiza o LocalStorage com a nova lista de receitas
     localStorage.setItem("receitas", JSON.stringify(receitas));
-
-    // Atualiza os saldos
     atualizarSaldo();
 
     alert("Receita adicionada com sucesso!");

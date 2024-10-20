@@ -1,22 +1,27 @@
 function adicionarDespesa() {
     const descricao = document.getElementById("description").value;
-    const valor = parseFloat(document.getElementById("value").value);
+    let valor = document.getElementById("value").value;
+
+    // Substitui a vírgula por ponto e remove caracteres extras
+    valor = valor.replace(",", ".");
+    valor = parseFloat(valor);
+
+    if (isNaN(valor) || valor <= 0) {
+        alert("Por favor, insira um valor válido.");
+        return;
+    }
+
     const data = document.getElementById("date").value;
 
-    // Verifica se já existe um array de despesas no LocalStorage
     let despesas = JSON.parse(localStorage.getItem("despesas")) || [];
 
-    // Adiciona a nova despesa ao array
     despesas.push({
         descricao: descricao,
         valor: valor,
         data: data
     });
 
-    // Atualiza o LocalStorage com a nova lista de despesas
     localStorage.setItem("despesas", JSON.stringify(despesas));
-
-    // Atualiza os saldos
     atualizarSaldo();
 
     alert("Despesa adicionada com sucesso!");
