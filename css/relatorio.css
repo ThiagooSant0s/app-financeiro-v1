@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #0D0D0D;
+    font-family: Arial, sans-serif;
+}
+
+.report-container {
+    text-align: center;
+    color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    width: 400px;
+}
+
+.top-links {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.back-link {
+    color: #4CAF50;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.exit-link {
+    color: #f44336;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+h1 {
+    font-size: 1.8em;
+    color: #f2f2f2;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #594302;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+/* Ajuste na tabela para permitir rolagem quando houver muitos dados */
+.table-container {
+    max-height: 300px; 
+    overflow-y: auto; 
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #22343c;
+    color: #f2f2f2;
+}
+
+td {
+    background-color: #3c3c3c;
+}
+
+/* Estilizando os botões de excluir */
+button.delete-button {
+    padding: 5px 10px;  /* Pequeno tamanho para ajustar ao layout */
+    background-color: #f44336;  /* Cor vermelha para indicar ação de exclusão */
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 0.9em;  /* Tamanho menor para não desproporcionalizar */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button.delete-button:hover {
+    background-color: #d32f2f;  /* Cor mais escura no hover */
+}
+
+button.download-button {
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #594302;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+button.download-button:hover {
+    background-color: #f2d335;
+}

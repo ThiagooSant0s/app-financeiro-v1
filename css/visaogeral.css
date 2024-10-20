@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #0D0D0D;
+    font-family: Arial, sans-serif;
+}
+
+.overview-container {
+    text-align: center;
+    color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    width: 300px;
+}
+
+.top-links {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.back-link {
+    color: #4CAF50;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.exit-link {
+    color: #f44336;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+/* Estilo para o link de trocar senha */
+.change-password-link {
+    color: #3652f4; 
+    text-decoration: none;
+    font-size: 1em;
+    margin-left: 10px; 
+}
+
+
+h1 {
+    font-size: 1.8em;
+    color: #f2f2f2;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #594302;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #d5dfd7;
+}
+
+input {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 25px;
+    background-color: #3c3c3c;
+    color: #fff;
+    font-size: 1em;
+    width: 100%;
+    text-align: center;
+}
+
+.income-button, .expense-button {
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.income-button {
+    background-color: #4CAF50;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.expense-button {
+    background-color: #f44336;
+    color: #fff;
+}
+
+.income-button:hover {
+    background-color: #66bb6a;
+}
+
+.expense-button:hover {
+    background-color: #e57373;
+}
+
+.report-button {
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #594302; 
+    color: #fff; 
+    transition: background-color 0.3s ease;
+}
+
+.report-button:hover {
+    background-color: #f2d335; 
+}
+
+a {
+    text-decoration: none; 
+    display: block;  
+}
