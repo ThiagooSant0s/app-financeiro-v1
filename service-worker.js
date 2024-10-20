@@ -20,7 +20,11 @@ const urlsToCache = [
     '/js/relatorio.js',
     '/js/visaogeral.js',
     '/icons/256x256.png',
-    '/icons/512x512.png'
+    '/icons/512x512.png',
+    '/icons/screenshot_1920x1080.png',
+    '/icons/screenshot_1436x896.png',
+    '/manifest.json',
+    '/favicon.ico'
 ];
 
 // Instalando o Service Worker

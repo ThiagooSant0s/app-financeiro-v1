@@ -16,6 +16,17 @@
       "type": "image/png",
       "sizes": "512x512"
     }
+  ],
+  "screenshots": [
+    {
+      "src": "/icons/screenshot_1436x896.png",
+      "type": "image/png",
+      "sizes": "1436x896"
+    },
+    {
+      "src": "/icons/screenshot_1920x1080.png",
+      "type": "image/png",
+      "sizes": "1920x1080"
+    }
   ]
 }
-  
