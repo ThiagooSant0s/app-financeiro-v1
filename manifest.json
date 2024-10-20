@@ -1,21 +1,21 @@
 {
-    "name": "Meu App Financeiro",
-    "short_name": "AppFinanceiro",
-    "start_url": "/index.html",
-    "display": "standalone",
-    "background_color": "#ffffff",
-    "theme_color": "#0D0D0D",
-    "icons": [
-      {
-        "src": "/icons/256x256.png",
-        "type": "image/png",
-        "sizes": "256x256"
-      },
-      {
-        "src": "/icons/512x512.png",
-        "type": "image/png",
-        "sizes": "512x512"
-      }
-    ]
-  }
+  "name": "Meu App Financeiro",
+  "short_name": "AppFinanceiro",
+  "start_url": "/app-financeiro-v1/index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0D0D0D",
+  "icons": [
+    {
+      "src": "/icons/256x256.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    },
+    {
+      "src": "/icons/512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
   
