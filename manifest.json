@@ -1,10 +1,16 @@
 {
   "name": "Meu App Financeiro",
   "short_name": "AppFinanceiro",
+  "id": "app-financeiro-v1",
+  "description": "Aplicativo organizador financeiro para gestão de receitas e despesas.",
   "start_url": "/app-financeiro-v1/index.html",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#0D0D0D",
+  "orientation": "portrait",
+  "launch_handler": {
+    "client_mode": "focus-existing"
+  },
   "icons": [
     {
       "src": "/icons/256x256.png",
